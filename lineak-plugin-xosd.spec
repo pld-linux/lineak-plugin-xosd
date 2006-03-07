@@ -9,11 +9,12 @@ License:	GPL
 Url:		http://lineak.sourceforge.net
 Group:		Applications/System
 Source0:	http://dl.sourceforge.net/lineak/%{packagename}-%{version}.tar.gz
-//Patch0:%{name}-DESTDIR.patch
+# Source0-md5:	36f519b21e7c7257bd9af6543f7fd9fc
 BuildRequires:	autoconf >= 2.54
 BuildRequires:	automake
 BuildRequires:	libstdc++-devel
 BuildRequires:	libtool
+BuildRequires:	xosd-devel
 BuildRequires:	lineakd >= %{version}
 Requires:	lineakd >= %{version}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -58,7 +59,6 @@ Wtyczka rozumie również następujące dyrektywy konfiguracyjne.
 
 %prep
 %setup -q -n %{packagename}-%{version}
-#%patch0 -p1
 
 %build
 %{__libtoolize}
@@ -84,5 +84,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS COPYING ChangeLog README TODO
 %{_libdir}/lineakd/plugins/*
-%{_sysconfdir}/*
 %{_mandir}/*/*
