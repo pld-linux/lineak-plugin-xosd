@@ -20,41 +20,44 @@ Requires:	lineakd >= %{version}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This is a set of plugins for lineakd. The plugins allow binding
-actions to special keys. This plugin allows display using the xosd
-library. It requires that you have the following configuration option
-in your lineakd.conf file:
+This is a plugin for lineakd. The plugin allows binding actions to special
+keys.
+
+This plugin allows display using the xosd library. It requires that you
+have the following configuration option in your lineakd.conf file:
 
  Display_plugin = xosd
 
 It also understands the following configuration directives.
 
- Display_font = 
- Display_color = 
- Display_pos = 
+ Display_font =
+ Display_color =
+ Display_pos =
  Display_align =
  Display_timeout =
- Display_hoffset = 
- Display_voffset = 
+ Display_hoffset =
+ Display_voffset =
  Display_soffset =
 
 %description -l pl
-To jest zbiÃ³r wtyczek do lineakd. Wtyczki te pozwalajÄ… na
-dowiÄ…zywanie akcji do specjalnych klaiwszy. Ta wtyczka pozwala na
-wyÅ›wietlanie przy pomocy biblioteki xosd. Wtyczka wymaga istnienia
-nastÄ™pujÄ…cej opcji konfiguracyjnej w Twoim pliku lineakd.conf:
+To jest wtyczka do lineakd. Wtyczka ta pozwala na dowi±zywanie
+akcji do specjalnych klawiszy.
+
+Ta wtyczka pozwala na wy¶wietlanie przy pomocy biblioteki xosd.
+Wtyczka wymaga istnienia nastêpuj±cej opcji konfiguracyjnej
+w Twoim pliku lineakd.conf:
 
  Display_plugin = xosd
 
-Wtyczka rozumie rÃ³wnieÅ¼ nastÄ™pujÄ…ce dyrektywy konfiguracyjne.
+Wtyczka rozumie równie¿ nastêpuj±ce dyrektywy konfiguracyjne.
 
- Display_font = 
- Display_color = 
- Display_pos = 
+ Display_font =
+ Display_color =
+ Display_pos =
  Display_align =
- Display_timeout = 
- Display_hoffset = 
- Display_voffset = 
+ Display_timeout =
+ Display_hoffset =
+ Display_voffset =
  Display_soffset =
 
 %prep
