@@ -1,21 +1,21 @@
 %define		packagename	lineak_xosdplugin
 
-Summary:	This is the XOSD Onscreen Display plugin for the lineakd daemon.
-Summary(pl):	To jest XOSD Onscreen Display plugin dla demona lineakd.
+Summary:	XOSD On-screen Display plugin for the lineakd daemon
+Summary(pl):	Wtyczka XOSD On-screen Display dla demona lineakd
 Name:		lineak-plugin-xosd
 Version:	0.8.4
 Release:	0.9
 License:	GPL
-Url:		http://lineak.sourceforge.net
 Group:		Applications/System
 Source0:	http://dl.sourceforge.net/lineak/%{packagename}-%{version}.tar.gz
 # Source0-md5:	36f519b21e7c7257bd9af6543f7fd9fc
+Url:		http://lineak.sourceforge.net/
 BuildRequires:	autoconf >= 2.54
 BuildRequires:	automake
 BuildRequires:	libstdc++-devel
 BuildRequires:	libtool
 BuildRequires:	xosd-devel
-BuildRequires:	lineakd >= %{version}
+BuildRequires:	lineakd-devel >= %{version}
 Requires:	lineakd >= %{version}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -28,7 +28,7 @@ have the following configuration option in your lineakd.conf file:
 
  Display_plugin = xosd
 
-It also understands the following configuration directives.
+It also understands the following configuration directives:
 
  Display_font =
  Display_color =
@@ -40,16 +40,16 @@ It also understands the following configuration directives.
  Display_soffset =
 
 %description -l pl
-To jest wtyczka do lineakd. Wtyczka ta pozwala na dowi±zywanie
-akcji do specjalnych klawiszy.
+To jest wtyczka do lineakd. Wtyczka ta pozwala na dowi±zywanie akcji
+do specjalnych klawiszy.
 
 Ta wtyczka pozwala na wy¶wietlanie przy pomocy biblioteki xosd.
-Wtyczka wymaga istnienia nastêpuj±cej opcji konfiguracyjnej
-w Twoim pliku lineakd.conf:
+Wtyczka wymaga istnienia nastêpuj±cej opcji konfiguracyjnej w pliku
+lineakd.conf:
 
  Display_plugin = xosd
 
-Wtyczka rozumie równie¿ nastêpuj±ce dyrektywy konfiguracyjne.
+Wtyczka rozumie równie¿ nastêpuj±ce dyrektywy konfiguracyjne:
 
  Display_font =
  Display_color =
@@ -86,5 +86,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS COPYING ChangeLog README TODO
-%{_libdir}/lineakd/plugins/*
+%attr(755,root,root) %{_libdir}/lineakd/plugins/*.so
 %{_mandir}/*/*
