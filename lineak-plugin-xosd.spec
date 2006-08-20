@@ -1,19 +1,19 @@
-%define		packagename	lineak_xosdplugin
+%define		packagename	lineak-xosdplugin
 
 Summary:	XOSD On-screen Display plugin for the lineakd daemon
 Summary(pl):	Wtyczka XOSD On-screen Display dla demona lineakd
 Name:		lineak-plugin-xosd
-Version:	0.8.4
-Release:	0.9
+Version:	0.9
+Release:	1
 License:	GPL v2+
 Group:		Applications/System
 Source0:	http://dl.sourceforge.net/lineak/%{packagename}-%{version}.tar.gz
-# Source0-md5:	36f519b21e7c7257bd9af6543f7fd9fc
+# Source0-md5:	295bba616b3b74264385b14b242947a4
 URL:		http://lineak.sourceforge.net/
 BuildRequires:	autoconf >= 2.54
 BuildRequires:	automake
 BuildRequires:	libstdc++-devel
-BuildRequires:	libtool
+BuildRequires:	libtool >= 2:1.5
 BuildRequires:	lineakd-devel >= %{version}
 BuildRequires:	sed >= 4.0
 BuildRequires:	xosd-devel
