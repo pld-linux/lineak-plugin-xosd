@@ -1,7 +1,7 @@
 %define		packagename	lineak-xosdplugin
 
 Summary:	XOSD On-screen Display plugin for the lineakd daemon
-Summary(pl):	Wtyczka XOSD On-screen Display dla demona lineakd
+Summary(pl.UTF-8):   Wtyczka XOSD On-screen Display dla demona lineakd
 Name:		lineak-plugin-xosd
 Version:	0.9
 Release:	1
@@ -40,17 +40,17 @@ It also understands the following configuration directives:
  Display_voffset =
  Display_soffset =
 
-%description -l pl
-To jest wtyczka do lineakd. Wtyczka ta pozwala na dowi±zywanie akcji
+%description -l pl.UTF-8
+To jest wtyczka do lineakd. Wtyczka ta pozwala na dowiÄ…zywanie akcji
 do specjalnych klawiszy.
 
-Ta wtyczka pozwala na wy¶wietlanie przy pomocy biblioteki xosd.
-Wtyczka wymaga istnienia nastêpuj±cej opcji konfiguracyjnej w pliku
+Ta wtyczka pozwala na wyÅ›wietlanie przy pomocy biblioteki xosd.
+Wtyczka wymaga istnienia nastÄ™pujÄ…cej opcji konfiguracyjnej w pliku
 lineakd.conf:
 
  Display_plugin = xosd
 
-Wtyczka rozumie równie¿ nastêpuj±ce dyrektywy konfiguracyjne:
+Wtyczka rozumie rÃ³wnieÅ¼ nastÄ™pujÄ…ce dyrektywy konfiguracyjne:
 
  Display_font =
  Display_color =
