@@ -1,7 +1,7 @@
 %define		packagename	lineak-xosdplugin
 
 Summary:	XOSD On-screen Display plugin for the lineakd daemon
-Summary(pl.UTF-8):   Wtyczka XOSD On-screen Display dla demona lineakd
+Summary(pl.UTF-8):	Wtyczka XOSD On-screen Display dla demona lineakd
 Name:		lineak-plugin-xosd
 Version:	0.9
 Release:	1
